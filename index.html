@@ -2,51 +2,155 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frontend Mentor | Contact form</title>
+<style>
+        body{
+            background-color: lightgreen;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .one{
+            display:flex;
+            /* margin-left: 15px; */
+            gap: 10px;
+            margin: 15px;
+    
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Contact form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+            
+            
+            
+        
+        }
+        .two{
+            margin-top: 25px;
+            margin-left: 18px;
+            display: flex;
+            flex-direction: column;
+        
+            
+            
+        }
+        .three{
+            /* display: flex; */
+            align-items: center;
+            margin:45px 15px 15px;
+            gap: 15px;
+            
+            
+        }
+        .four{
+            display:flex;
+            flex-direction: column;
+            width:25rem;
+            margin:25px 15px 0 15px;
+            width: 100%;
+            
+
+        }
+        form{
+            background-color: white;
+            /* height: auto; */
+            /* width: 500px; */
+            border-radius:10px;
+            padding: 20px;
+        
+    
+            
+        }
+        .six{
+            width: 90%;
+            background-color: green;
+            margin: 15px 0 15px 40px;
+            height: 50px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            background-color: darkgreen;
+
+            
+        }
+        .seven{
+            border: 1px solid ;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 5px 10px;
+            
+
+
+        }
+        .eight{
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 5px 10px;
+        
+            
+        }
+        h1{
+            margin-left: 15px;
+        }
+        .ten{
+            margin: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+        }
+    </style>
 </head>
 <body>
-
-  Contact Us
-
-  First Name
-  This field is required
-
-  Last Name
-  This field is required
-
-  Email Address
-  Please enter a valid email address
-  This field is required
-
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
-
-  Message
-  This field is required
-
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
-
-  Submit
-
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+ <form action="">
+    <h1>Contact US</h1>
+    <div class="one">
+        <div style="display: flex;flex-direction: column; flex: 1;">
+            <label> First Name*</label>
+            <input type="text" style="padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
+        </div>
+        <div style="display: flex;flex-direction: column; flex: 1;">
+            <label>Lastname* </label>
+            <input type="text" style="padding: 8px;border-radius: 5px; border: 1px solid #ccc;">
+        </div>
+    </div>
+    <div class="two">
+        <label style="display: block;">Email Address*</label>
+        <input type="text" style="padding: 8px; border-radius: 5px;border: 1px solid #ccc;">
+    </div>
+    <div class="three">
+        <label style=" margin-left: 15px;">query Type*</label>
+        <div style="display: flex; margin-top: 15px;">
+            <div class="seven">
+            <input type="radio">
+            <label style="margin-right: 10px; font-weight: bold;margin-left: 20px;">General Enquiry</label>    
+            </div>
+            <div class="eight" style="margin-left: 15px;">
+            <input type="radio">
+            <label style="margin-right: 10px; font-weight:bold">support Request</label>
+            </div>
+        </div>
+    </div>
+ <div >
+    <div class="four">
+        <label for="name">Messages*</label>
+        <textarea name="messages" id="message" style="padding: 10px;border-radius: 5px;border: 1px solid #ccc;height: 100px;font-size: 1rem;"></textarea>
+    </div>
+        <div class="ten">
+            <input type="checkbox">
+            <label >i consent to being contacted by the team.</label>
+        </div>
+    
+    </div>
+    <input type="submit" class="six">
+  </form>
 </body>
 </html>
